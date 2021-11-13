@@ -4,6 +4,7 @@ public class GameOfLife {
         System.out.println("Hello");
     }
 
-    public void isCellAlive(Cell cell, int i) {
+    public Boolean isCellAlive(Cell cell, int i) {
+        return false;
     }
 }

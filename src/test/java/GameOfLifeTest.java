@@ -19,7 +19,13 @@ class GameOfLifeTest {
 
     @Test
     void textAnyLiveCellWithFewerThanTwoLiveNeighboursDies() {
-        var isAlive = game.isCellAlive(new Cell(), 1);
+        Boolean isAlive = game.isCellAlive(new Cell(), 1);
         Assertions.assertFalse(isAlive);
+    }
+
+    @Test
+    void textAnyLiveCellWithTwoLiveNeighboursLives() {
+        Boolean isAlive = game.isCellAlive(new Cell(), 2);
+        Assertions.assertTrue(isAlive);
     }
 }
