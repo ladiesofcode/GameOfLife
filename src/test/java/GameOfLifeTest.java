@@ -20,4 +20,11 @@ class GameOfLifeTest {
     void test() {
         Assertions.fail();
     }
+
+    @Test
+    void aLivingCellWith0AdjacentCellsShouldDie() {
+        boolean currentCellState = true;
+        boolean newCellState = LifeProcessor.calculate(currentCellState, 0);
+        assertFalse(newCellState);
+    }
 }
