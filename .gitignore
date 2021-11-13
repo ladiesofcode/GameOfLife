@@ -5,4 +5,4 @@
 *.ipr
 /target
 .gradle/*
-build/*
+build
