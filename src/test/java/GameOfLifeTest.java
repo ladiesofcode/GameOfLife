@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;git add .
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,12 +13,6 @@ class GameOfLifeTest {
 
     @AfterEach
     void tearDown() {
-    }
-
-
-    @Test
-    void test() {
-        Assertions.fail();
     }
 
     @Test
