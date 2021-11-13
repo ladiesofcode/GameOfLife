@@ -3,9 +3,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class GameOfLifeTest {
+
+
+    private GameOfLife game = new GameOfLife();
 
     @BeforeEach
     void setUp() {
@@ -17,7 +18,8 @@ class GameOfLifeTest {
 
 
     @Test
-    void test() {
-        Assertions.fail();
+    void textAnyLiveCellWithFewerThanTwoLiveNeighboursDies() {
+        var isAlive = game.isCellAlive(new Cell(), 1);
+        Assertions.assertFalse(isAlive);
     }
 }
